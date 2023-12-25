@@ -7,7 +7,6 @@ use Filament\Support\Concerns\Configurable;
 use Filament\Support\Concerns\EvaluatesClosures;
 use Filament\Support\Concerns\HasExtraAlpineAttributes;
 use Filament\Support\Concerns\HasExtraAttributes;
-use Filament\Tables\Contracts\RendersFormComponentActionModal;
 use Filament\Widgets\Widget;
 use Illuminate\Contracts\Support\Htmlable;
 use Webbingbrasil\FilamentMaps\Concerns\HasActions;
@@ -19,7 +18,7 @@ use Webbingbrasil\FilamentMaps\Concerns\HasPolylines;
 use Webbingbrasil\FilamentMaps\Concerns\HasRectangles;
 use Webbingbrasil\FilamentMaps\Concerns\HasTileLayer;
 
-abstract class MapWidget extends Widget implements HasForms, RendersFormComponentActionModal
+abstract class MapWidget extends Widget implements HasForms
 {
     use HasExtraAttributes;
     use HasExtraAlpineAttributes;
